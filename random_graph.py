@@ -1,24 +1,34 @@
 import networkx as nx
-import matplotlib.pyplot as plt
 import sys
-from networkx.generators.random_graphs import erdos_renyi_graph
-from random import seed
-from random import randint
+import math
+import networkx
+import random
+import matplotlib.pyplot as plt
+from networkx.generators.classic import empty_graph, path_graph, complete_graph
 
-#n = randint(0, 10)
-n = 6
-p = 0.5
-g = erdos_renyi_graph(n, p)
+def aleatoire_graph(n, p):
+        G=empty_graph(n)
 
-sys.stdout = open("test.txt", "w")
+        for u in range(n):
+                for v in range(u+1,n):
+                        if random.random() < p:
+                                G.add_edge(u,v)
+        return G
 
-print(g.nodes)
-# [0, 1, 2, 3, 4, 5]
-print(g.edges)
-# [(0, 1), (0, 2), (0, 4), (1, 2), (1, 5), (3, 4), (4, 5)]
+if __name__ == "__main__":
+        n = 6
+        p = 0.5
 
-sys.stdout.close()
+        sys.stdout = open("test.txt", "w")
 
-nx.draw(g)
-plt.savefig("random_graph.png")
-plt.show()
+        G=aleatoire_graph(n, p)
+        print(G.nodes)
+        # [0, 1, 2, 3, 4, 5]
+        print(G.edges)
+        # [(0, 1), (0, 2), (0, 4), (1, 2), (1, 5), (3, 4), (4, 5)]
+
+        sys.stdout.close()
+
+        nx.draw(G)
+        plt.savefig("random_graph.png")
+        plt.show()
