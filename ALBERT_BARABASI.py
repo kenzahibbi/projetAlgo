@@ -63,4 +63,4 @@ for f in range(nb_final - nb_init):
 
 nx.draw(G, with_labels=True) 
 plt.show() 
-nx.write_edgelist(G, "text.txt")      
+nx.write_edgelist(G, "text.csv")      
