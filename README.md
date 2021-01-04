@@ -1,8 +1,8 @@
 # projetAlgo
 Le projet contient quatres scripts python:
 1. random_graph.py
-2. ALBERT_BARABASI.py 
-3. twitchDE-parameters.py
+2. ALBERT_BARABASI.py
+3. partie2.py 
 4. txtToCsv.py
 =============================================================================================================================
 1. random_graph.py :
@@ -33,13 +33,21 @@ Veuillez entrer le nombre de noeuds final :  9
 * un graphe aléatoire "random_graph.png"
 * un fichier text: "testALbert.txt" contient les paramétres du graphe generer.
 =============================================================================================================================
-3. twitchDE-parameters.py:
-  - C'est quoi?
-Ce script permet de  
+3. partie2.py 
+ - C'est quoi?
+Ce script permet de calculer les parametres suivants:Nombre de sommets, Nombre d’arêtes,Degré maximal, Degré moyen 
+(somme des degrés divisée par le nombre de sommets) et La distribution des degrés.
+
   - Comment executer?
-  
+Avant de lancer la commande il faut mettre le nom du fichier .csv quand veut analyser (f= open('nomFichier.csv','r') )
+apres exercuter la commande suivate:
+python3 partie2.py
+
   - Résultat de script:
-  
+* une photo avec la distribution des degrés"random_graph.png"
+* un array avec les parametres a calculer (120, 3632, 76, 207.54285714285714)
+
+
 =============================================================================================================================
 4. txtToCsv.py :
    - C'est quoi?
