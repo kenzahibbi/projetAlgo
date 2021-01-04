@@ -56,7 +56,7 @@ apres exercuter la commande suivate:
 python3 partie2.py
 
   - Résultat de script:
-* une photo avec la distribution des degrés"random_graph.png"
+* une photo avec la distribution des degrés
 * les differents autres parametres
 
 
