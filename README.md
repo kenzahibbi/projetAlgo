@@ -23,7 +23,7 @@ python3 random_graph.py
 
   - Résultat de script:
 * un graphe aléatoire "random_graph.png"
-* un fichier text: "test.txt" contient les paramétres du graphe generer.
+* un fichier text: "test.txt" contient la liste des aretes du graphe generé.
 
 =============================================================================================================================
 
@@ -35,12 +35,13 @@ de noeuds final "nb_final".
   - Comment executer?
 lancer la commande :
 python3 ALBERT_BARABASI.py
+Vous devez saisir les valeurs des parametres en entrée, exemple:
 Veuillez entrer la valeur du parametre m (m <= 3) : 2
 Veuillez entrer le nombre de noeuds final :  9
   
   - Résultat de script:
-* un graphe aléatoire "random_graph.png"
-* un fichier text: "testALbert.txt" contient les paramétres du graphe generer.
+* un graphe aléatoire affiché
+* un fichier text: "testALbert.txt" contient la liste des aretes du graphe generé.
 
 =============================================================================================================================
 
@@ -56,7 +57,7 @@ python3 partie2.py
 
   - Résultat de script:
 * une photo avec la distribution des degrés"random_graph.png"
-* un array avec les parametres a calculer (120, 3632, 76, 207.54285714285714)
+* les differents autres parametres
 
 
 =============================================================================================================================
