@@ -9,7 +9,9 @@ les librairies à installer sont:
   *matplotlib
   *pandas
   *pyplot
-
+  
+Le rendu contient egalement les fichiers .csv des graphes generés par l'algorithme de gilbert et d'albert(utilisés pour l'étude des graphes dans la deuxieme partie)
+Ces graphes ainsi que le script partie2 sont dans le dossier PARTIE-2
 =============================================================================================================================
 
 1. random_graph.py :
@@ -29,7 +31,7 @@ python3 random_graph.py
 
 2.ALBERT_BARABASI.py :
   - C'est quoi?
-Ce script permet de generer un graphe aléatoire a l'aide d'un paramètre d'attachement 0 < "m" < 3 et on indicant le nombre 
+Ce script permet de generer un graphe aléatoire a l'aide d'un paramètre d'attachement 0 < "m" < 3 et en indicant le nombre 
 de noeuds final "nb_final".
 
   - Comment executer?
