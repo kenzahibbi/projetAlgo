@@ -61,6 +61,7 @@ for f in range(nb_final - nb_init):
         ajout_arrete()
     nv_sommet += 1
 
+#generation de fichier.txt
 sys.stdout = open("testALbert.txt", "w")
 print(G.edges) 
 sys.stdout.close()
