@@ -4,7 +4,14 @@ Le projet contient quatres scripts python:
 2. ALBERT_BARABASI.py
 3. partie2.py 
 4. txtToCsv.py
+les librairies à installer sont: 
+  *networkx
+  *matplotlib
+  *pandas
+  *pyplot
+
 =============================================================================================================================
+
 1. random_graph.py :
   - C'est quoi?
 Ce script permet de generer un graphe aléatoire a partir d'un nombre definie de noeud et avec une probabilité definie,
@@ -17,7 +24,9 @@ python3 random_graph.py
   - Résultat de script:
 * un graphe aléatoire "random_graph.png"
 * un fichier text: "test.txt" contient les paramétres du graphe generer.
+
 =============================================================================================================================
+
 2.ALBERT_BARABASI.py :
   - C'est quoi?
 Ce script permet de generer un graphe aléatoire a l'aide d'un paramètre d'attachement 0 < "m" < 3 et on indicant le nombre 
@@ -32,7 +41,9 @@ Veuillez entrer le nombre de noeuds final :  9
   - Résultat de script:
 * un graphe aléatoire "random_graph.png"
 * un fichier text: "testALbert.txt" contient les paramétres du graphe generer.
+
 =============================================================================================================================
+
 3. partie2.py 
  - C'est quoi?
 Ce script permet de calculer les parametres suivants:Nombre de sommets, Nombre d’arêtes,Degré maximal, Degré moyen 
@@ -49,6 +60,7 @@ python3 partie2.py
 
 
 =============================================================================================================================
+
 4. txtToCsv.py :
    - C'est quoi?
 Ce script sert a convertir le fichier de type text generer lors de la génération des graphe, en fichier csv
@@ -61,5 +73,6 @@ fin = open("test.txt", "rt"), afin de generer le fichier csv "test.csv".
 
 - Résultat de script:
  * le fichier  "test.csv".
+ 
  =============================================================================================================================
  
