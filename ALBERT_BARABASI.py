@@ -1,6 +1,7 @@
 import networkx as nx
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
 
 #cette fonction calcule la liste de probabilités avec lesquelles chaque sommet existant sera connecté au nouveau sommet 
 #et retourne un sommet choisi aleatoirement pour le connecter 
@@ -60,7 +61,6 @@ for f in range(nb_final - nb_init):
         ajout_arrete()
     nv_sommet += 1
 
-
-nx.draw(G, with_labels=True) 
-plt.show() 
-nx.write_edgelist(G, "text.csv")      
+sys.stdout = open("testALbert.txt", "w")
+print(G.edges) 
+sys.stdout.close()
