@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# coding: utf-8
 import networkx as nx
 import sys
 import math
@@ -25,8 +27,7 @@ if __name__ == "__main__":
         sys.stdout = open("test.txt", "w") #ouvrir le fichier test.txt en écriture pour sauvegarder les paramétres du graphe 
 
         G=aleatoire_graph(n, p) #appel de la fonction pour creer un graphe aleatoire
-        #print(G.nodes) #écriture des nodes dans le fichier test.txt
-        # [0, 1, 2, 3, 4, 5]
+      
         print(G.edges) #écriture des edges dans le fichier test.txt
         # [(0, 1), (0, 2), (0, 4), (1, 2), (1, 5), (3, 4), (4, 5)]
 
