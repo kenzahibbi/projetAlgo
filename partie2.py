@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #lecture du fichier csv , inserer nom fichier à analyser
-f= open('test1.csv','r')
+f= open('Albert-G1.csv','r')
 reader=csv.reader(f)
 
 #Creation d'un dictionnaire representant le graphe, chaque sommet avec la liste des sommets formant une arrete
